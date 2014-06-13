@@ -2,13 +2,63 @@
 
 <html>
 	<head>
-		<title>My Github Test - Changed</title>
+		<title>jQuery Test</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script>
+		 $(document).ready(function(){
+		 
+		 $("#hide").click(function(){
+			$("#box").hide(5000);
+		 		 });
+		 
+		 
+		 $("#show").click(function(){
+			$("#box").show(5000);
+		 		 });
+		
+		 
+		 $("#slideup").click(function(){
+			$("#box").slideUp(5000);
+		 		 });
+		 
+		 
+		 $("#slidedown").click(function(){
+			$("#box").slideDown(5000);
+		 		 });
+		 
+		 
+		 $("#toggle").click(function(){
+			$("#box").toggle(5000);
+		 		 });
+		 });
+		 
+		 	 
+		 
+		</script>
+		
+		<style>
+			#box{
+				width:400px;
+				height:300px;
+				background: cornflowerblue;
+			}
+		</style>
 	</head>
 
 	<body>
-		<h2>Github</h2>
+		<h1>jQuery Test</h1>
 		
-		<p>Added on website</p>
+		<ul>
+			<li id="hide"><a href="#">Hide</a></li>
+			<li id="show"><a href="#">Show</a></li>
+			<li id="slideup"><a href="#">SlideUp</a></li>
+			<li id="slidedown"><a href="#">SlideDown</a></li>
+			<li id="toggle"><a href="#">Toggle</a></li>
+		</ul>
+		
+		<p>Buttons here</p>
+		
+		<div id="box">Testing function</div>
 	</body>
 
 </html>
